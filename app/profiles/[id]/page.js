@@ -27,9 +27,14 @@ export default async function ProfileDetailPage({ params }) {
 
   return (
     <div className="profile-detail">
-      <Link href="/" className="back-link">
-        ← Back to Profiles
-      </Link>
+      <div className="profile-detail-actions">
+        <Link href="/" className="back-link">
+          ← Back to Profiles
+        </Link>
+        <Link href={`/profiles/${id}/edit`} className="btn-primary">
+          Edit Profile
+        </Link>
+      </div>
 
       <div className="profile-detail-card">
         {avatar ? (

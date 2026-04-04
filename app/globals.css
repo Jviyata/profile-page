@@ -404,6 +404,18 @@ a {
   gap: 0.6rem;
 }
 
+.profile-detail-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-detail-actions .back-link {
+  margin-bottom: 0;
+}
+
 /* ── About Page ────────────────────────────── */
 .about-page {
   max-width: 860px;
@@ -614,6 +626,12 @@ a {
   opacity: 0.7;
 }
 
+.form-button-group {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
 .directory-groups {
   display: flex;
   flex-direction: column;
@@ -706,6 +724,30 @@ a {
   background: var(--olive-dark);
 }
 
+.btn-danger {
+  background: var(--red-accent);
+  color: var(--white);
+  border: none;
+  border-radius: 9px;
+  padding: 0.7rem 1.75rem;
+  font-family: var(--font-dm-sans, "DM Sans", sans-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-danger:hover {
+  opacity: 0.9;
+}
+
+.btn-danger:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 /* ── Loading ───────────────────────────────── */
 .loading-grid {
   max-width: 1200px;
@@ -796,5 +838,10 @@ a {
   .form-actions {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .profile-detail-actions {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
