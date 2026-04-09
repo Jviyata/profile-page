@@ -20,6 +20,7 @@ pnpm-debug.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
@@ -27,3 +28,9 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# prisma local sqlite
+prisma/*.db
+prisma/*.db-journal
+prisma/prisma/*.db
+prisma/prisma/*.db-journal
